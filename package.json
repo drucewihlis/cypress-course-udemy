@@ -1,0 +1,13 @@
+{
+  "name": "cypress_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "runner": "cypress open --e2e --browser chrome"
+  },
+  "devDependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^13.11.0",
+    "typescript": "*"
+  }
+}
