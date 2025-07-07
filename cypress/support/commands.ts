@@ -27,3 +27,28 @@ require('cy-verify-downloads').addCustomCommand();
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// cypress/support/index.ts
+declare global {
+    namespace Cypress {
+        interface Chainable {
+            login(email: string, password: string): Chainable<void>;
+            // drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>;
+            // dismiss(
+            //     subject: string,
+            //     options?: Partial<TypeOptions>
+            // ): Chainable<Element>
+            // visit(
+            //     originalFn: CommandOriginalFn,
+            //     url: string,
+            //     options?: Partial<TypeOptions>
+            // ): Chainable<Element>
+        }
+    }
+}
+
+Cypress.Commands.add('login', (username: string, password: string)=>{
+    cy.get('#userName').type(username)
+    cy.get('#password').type(password)
+    cy.get('#login').click()
+})
