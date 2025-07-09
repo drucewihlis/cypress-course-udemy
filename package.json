@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "runner": "cypress open --e2e --browser chrome --config baseUrl=http://uitestingplayground.com --env demoVar=Hello_from_package_file"
+    "runner": "cypress open --e2e --browser chrome --config baseUrl=http://uitestingplayground.com --env demoVar=Hello_from_package_file",
+    "cypress-run": "cypress run --browser chrome --spec cypress/e2e/26-customCommands.cy.ts"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.3.0",
@@ -12,6 +13,7 @@
     "cy-verify-downloads": "^0.2.6",
     "cypress": "^13.11.0",
     "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
     "cypress-real-events": "^1.13.0",
     "typescript": "*"
   }

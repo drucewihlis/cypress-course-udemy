@@ -9,6 +9,8 @@ export default defineConfig({
     setupNodeEvents(on, config) {
       // Verify download import
       on('task', { isFileExist, findFiles })
+      // for cypress-mochawesome-reporter
+      require('cypress-mochawesome-reporter/plugin')(on);
     },
     // Configure your E2E tests here
     specPattern: "cypress/e2e/**/*.{cy,spec}.{js,ts}",
@@ -21,5 +23,15 @@ export default defineConfig({
     pageLoadTimeout: 60000,
     viewportHeight: 1000,
     viewportWidth: 1400,
+    reporter: 'cypress-mochawesome-reporter',
+    reporterOptions: {
+      charts: true,
+      reportPageTitle: 'Udemy Course Report',
+      embeddedScreenshots: true,
+      inlineAssets: true,
+      saveAllAttempts: false,
+    },
+    // video: true,
+    screenshotOnRunFailure: true,
   },
 })
