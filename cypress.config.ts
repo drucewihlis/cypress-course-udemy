@@ -66,7 +66,8 @@ export default defineConfig({
         user: "root",
         password: "",
         database: "cypress_test",
-      }
+      },
+      mobileViewportWidthBreakpoint: 400,
     },
     pageLoadTimeout: 60000,
     viewportHeight: 1000,

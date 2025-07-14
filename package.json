@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "runner": "cypress open --e2e --browser chrome --config baseUrl=http://uitestingplayground.com --env demoVar=Hello_from_package_file",
-    "cypress-run": "cypress run --browser chrome --spec cypress/e2e/26-customCommands.cy.ts"
+    "cypress-run": "cypress run --browser chrome --spec cypress/e2e/26-customCommands.cy.ts",
+    "runner-mobile": "cypress open --e2e --browser chrome --config baseUrl=http://uitestingplayground.com,viewportWidth=100 --env demoVar=Hello_from_package_file"
   },
   "devDependencies": {
     "@4tw/cypress-drag-drop": "^2.3.0",

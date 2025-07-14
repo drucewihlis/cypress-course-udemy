@@ -1,0 +1,39 @@
+{
+  "userId": "7d01de84-9527-4855-a10c-043a637178b3",
+  "username": "joan esquivel",
+  "books": [
+    {
+      "isbn": "9781449331818",
+      "title": "#1",
+      "subTitle": "A JavaScript and jQuery Developer's Guide",
+      "author": "Addy Osmani",
+      "publish_date": "2020-06-04T09:11:40.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 254,
+      "description": "With Learning JavaScript Design Patterns, you'll learn how to write beautiful, structured, and maintainable JavaScript by applying classical and modern design patterns to the language. If you want to keep your code efficient, more manageable, and up-to-da",
+      "website": "http://www.addyosmani.com/resources/essentialjsdesignpatterns/book/"
+    },
+    {
+      "isbn": "9781449365035",
+      "title": "#2",
+      "subTitle": "An In-Depth Guide for Programmers",
+      "author": "dummy author",
+      "publish_date": "2014-02-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 460,
+      "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o",
+      "website": "http://speakingjs.com/"
+    },
+    {
+      "isbn": "9781449365035",
+      "title": "#3",
+      "subTitle": "An In-Depth Guide for Programmers",
+      "author": "dummy author",
+      "publish_date": "2014-02-01T00:00:00.000Z",
+      "publisher": "O'Reilly Media",
+      "pages": 460,
+      "description": "Like it or not, JavaScript is everywhere these days-from browser to server to mobile-and now you, too, need to learn the language or dive deeper than you have. This concise book guides you into and through JavaScript, written by a veteran programmer who o",
+      "website": "http://speakingjs.com/"
+    }
+  ]
+}
